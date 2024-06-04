@@ -1,6 +1,6 @@
 {
   "DisplayName": "Tetra Goon black",
-  "SosigEnemyCategory": "MeatleGear",
+  "SosigEnemyCategory": "MercWieners",
   "SosigEnemyID": "Tetra_goon_black",
   "SosigPrefabs": [
     "SosigBody_Pacification"
@@ -211,7 +211,7 @@
       "Chance_Facewear": 1.0,
       "ForceWearAllFace": false,
       "Torsowear": [
-        "SosigAccessory_MountainMeat_Workshirt_Black",
+        "SosigAccessory_MountainMeat_Jacket_Black",
         "Sosig_desperado_torso_dusterTop_black"
       ],
       "Chance_Torsowear": 1.0,

@@ -14,8 +14,8 @@
   "assets": {
     "patcher": {},
     "setup": {
-      "equilibrium/sosigs/*.json": "h3vr.tnhtweaker.deli:sosig",
-      "equilibrium/": "h3vr.tnhtweaker.deli:character"
+      "Equilibrium/sosigs/*.json": "h3vr.tnhtweaker.deli:sosig",
+      "Equilibrium/": "h3vr.tnhtweaker.deli:character"
     },
     "runtime": {}
   }

@@ -1,6 +1,6 @@
 {
   "DisplayName": "Cleric Preston",
-  "SosigEnemyCategory": "MeatleGear",
+  "SosigEnemyCategory": "MercWieners",
   "SosigEnemyID": "Cleric_John_Preston",
   "SosigPrefabs": [
     "SosigBody_Default"
@@ -212,12 +212,12 @@
       "Chance_Torsowear": 1.0,
       "ForceWearAllTorso": false,
       "Pantswear": [
-        "MGArticAbdo"
+        "SosigHLOberwurstElitelegs"
       ],
       "Chance_Pantswear": 1.0,
       "ForceWearAllPants": false,
       "Pantswear_Lower": [
-        "MGArticLegs"
+        "SosigHLOberwurstElitelegs"
       ],
       "Chance_Pantswear_Lower": 1.0,
       "ForceWearAllPantsLower": false,

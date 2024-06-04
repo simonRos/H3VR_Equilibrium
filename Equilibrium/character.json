@@ -700,7 +700,7 @@
       ],
       "TakeChallenge": {
         "TurretType": "SMG",
-        "EnemyType": "M_Swat_Guard",
+        "EnemyType": "Tetra_goon_green",
         "NumTurrets": 0,
         "NumGuards": 2,
         "IFFUsed": 1
@@ -715,9 +715,9 @@
           "MinTargetsLimited": 3,
           "MaxTargetsLimited": 3,
           "EnemyType": [
-            "M_Swat_Guard"
+            "Tetra_goon_green"
           ],
-          "LeaderType": "sosig_ExampleCustomSosig",
+          "LeaderType": "Tetra_goon_black",
           "MinEnemies": 2,
           "MaxEnemies": 2,
           "MaxEnemiesAlive": 4,
@@ -733,7 +733,7 @@
       ],
       "SupplyChallenge": {
         "TurretType": "SMG",
-        "EnemyType": "M_Swat_Guard",
+        "EnemyType": "Tetra_goon_green",
         "NumTurrets": 0,
         "NumGuards": 2,
         "IFFUsed": 1
@@ -779,7 +779,7 @@
       ],
       "TakeChallenge": {
         "TurretType": "SMG",
-        "EnemyType": "M_Swat_Guard",
+        "EnemyType": "Tetra_goon_green",
         "NumTurrets": 0,
         "NumGuards": 3,
         "IFFUsed": 1
@@ -836,7 +836,7 @@
       ],
       "SupplyChallenge": {
         "TurretType": "SMG",
-        "EnemyType": "M_Swat_Guard",
+        "EnemyType": "Tetra_goon_green",
         "NumTurrets": 0,
         "NumGuards": 3,
         "IFFUsed": 1
@@ -1685,9 +1685,9 @@
           "MinTargetsLimited": 1,
           "MaxTargetsLimited": 1,
           "EnemyType": [
-            "M_Swat_Guard"
+            "Tetra_goon_green"
           ],
-          "LeaderType": "M_Swat_Guard",
+          "LeaderType": "Tetra_goon_green",
           "MinEnemies": 3,
           "MaxEnemies": 6,
           "MaxEnemiesAlive": 9,
@@ -1915,9 +1915,9 @@
           "MinTargetsLimited": 3,
           "MaxTargetsLimited": 3,
           "EnemyType": [
-            "M_Swat_Guard"
+            "Tetra_goon_green"
           ],
-          "LeaderType": "M_Swat_Guard",
+          "LeaderType": "Tetra_goon_black",
           "MinEnemies": 3,
           "MaxEnemies": 3,
           "MaxEnemiesAlive": 3,
