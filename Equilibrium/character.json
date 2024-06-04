@@ -1,6 +1,6 @@
 {
-  "DisplayName": "H3VR_Equilibrium",
-  "Description": "Blah Blah Blah.\nSecond line.",
+  "DisplayName": "Cleric John Preston",
+  "Description": "Work in progress",
   "CharacterGroup": 0,
   "TableID": "H3VR_Equilibrium",
   "StartingTokens": 3,
@@ -15,38 +15,28 @@
   "HasTertiaryItem": false,
   "HasShield": false,
   "ValidAmmoEras": [
-    "Colonial",
-    "WildWest",
-    "TurnOfTheCentury",
-    "WW1",
-    "WW2",
-    "Medieval",
     "PostWar",
     "Modern",
     "Futuristic"
   ],
   "ValidAmmoSets": [
-    "Real"
+    "Real",
+    "GroundedFictional"
   ],
-  "GlobalAmmoBlacklist": [
-    "12GaugeShellSlug",
-    "12GaugeShellCannonball",
-    "12GaugeShellDragonsBreath",
-    "12GaugeShellFreedomfetti",
-    "12GaugeShellNo4Buckshot",
-    "12GaugeShellRedFlare",
-    "12GaugeShellSWAG12FA",
-    "12GaugeShellSWAG12HE",
-    "12GaugeShellTripleHit"
-  ],
+  "GlobalAmmoBlacklist": [],
   "MagazineBlacklist": [
     {
-      "FirearmID": "ModularMPXDupe",
+      "FirearmID": "ClericM9",
       "MagazineBlacklist": [
-        "MagazineEvo3",
-        "MagazineEvo315rnd",
-        "MagazineEvo350rnd",
-        "FtwGunEvo40mag"
+        "MagazineM9A3",
+        "MagazinePX4"
+      ],
+      "ClipBlacklist": []
+    },
+    {
+      "FirearmID": "G36",
+      "MagazineBlacklist": [
+        "MagazineG36Drum"
       ],
       "ClipBlacklist": []
     }
@@ -79,7 +69,7 @@
     "MountsAvailable": [],
     "RoundPowers": [],
     "Features": [
-      "Reflex"
+      "IronSight"
     ],
     "MeleeStyles": [],
     "MeleeHandedness": [],
@@ -97,8 +87,8 @@
       "Rarity": 1.0,
       "RequiredQuest": null,
       "ItemsToSpawn": 0,
-      "MinAmmoCapacity": 5,
-      "MaxAmmoCapacity": 12,
+      "MinAmmoCapacity": 15,
+      "MaxAmmoCapacity": 15,
       "NumMagsSpawned": 3,
       "NumClipsSpawned": 3,
       "NumRoundsSpawned": 6,
@@ -107,27 +97,18 @@
       "IsCompatibleMagazine": false,
       "AutoPopulateGroup": true,
       "ForceSpawnAllSubPools": false,
-      "IDOverride": [],
+      "IDOverride": [
+        "ClericM9"
+      ],
       "Eras": [],
-      "Sets": [
-        "Real"
-      ],
-      "Sizes": [
-        "Pocket",
-        "Pistol"
-      ],
-      "Actions": [
-        "Automatic"
-      ],
+      "Sets": [],
+      "Sizes": [],
+      "Actions": [],
       "Modes": [],
-      "ExcludedModes": [
-        "FullAuto"
-      ],
+      "ExcludedModes": [],
       "FeedOptions": [],
       "MountsAvailable": [],
-      "RoundPowers": [
-        "Pistol"
-      ],
+      "RoundPowers": [],
       "Features": [],
       "MeleeStyles": [],
       "MeleeHandedness": [],
@@ -192,11 +173,11 @@
       "IsCompatibleMagazine": false,
       "AutoPopulateGroup": false,
       "ForceSpawnAllSubPools": false,
-      "IDOverride": [],
-      "Eras": [],
-      "Sets": [
-        "Real"
+      "IDOverride": [
+        "Tactical_BrassKnuckles"
       ],
+      "Eras": [],
+      "Sets": [],
       "Sizes": [],
       "Actions": [],
       "Modes": [],
@@ -205,9 +186,7 @@
       "MountsAvailable": [],
       "RoundPowers": [],
       "Features": [],
-      "MeleeStyles": [
-        "Tactical"
-      ],
+      "MeleeStyles": [],
       "MeleeHandedness": [],
       "MountTypes": [],
       "PowerupTypes": [],
@@ -222,7 +201,7 @@
       "Category": "Powerup",
       "Rarity": 1.0,
       "RequiredQuest": null,
-      "ItemsToSpawn": 1,
+      "ItemsToSpawn": 2,
       "MinAmmoCapacity": 0,
       "MaxAmmoCapacity": 0,
       "NumMagsSpawned": 0,
@@ -233,7 +212,10 @@
       "IsCompatibleMagazine": false,
       "AutoPopulateGroup": true,
       "ForceSpawnAllSubPools": false,
-      "IDOverride": [],
+      "IDOverride": [
+        "PowerUpMeat_InfiniteAmmo",
+        "PowerUpMeat_Invincibility"
+      ],
       "Eras": [],
       "Sets": [],
       "Sizes": [],
@@ -247,9 +229,7 @@
       "MeleeStyles": [],
       "MeleeHandedness": [],
       "MountTypes": [],
-      "PowerupTypes": [
-        "Health"
-      ],
+      "PowerupTypes": [],
       "ThrownTypes": [],
       "ThrownDamageTypes": [],
       "SubGroups": []
@@ -369,13 +349,13 @@
   },
   "EquipmentPools": [
     {
-      "Type": "Firearm",
-      "IconName": "TNH_Icon_automatic",
-      "TokenCost": 3,
-      "TokenCostLimited": 3,
-      "MinLevelAppears": 1,
-      "MaxLevelAppears": 2,
-      "SpawnsInSmallCase": false,
+      "Type": "Locomotion",
+      "IconName": "TNH_Icon_pistols",
+      "TokenCost": 1,
+      "TokenCostLimited": 1,
+      "MinLevelAppears": 0,
+      "MaxLevelAppears": 99,
+      "SpawnsInSmallCase": true,
       "SpawnsInLargeCase": false,
       "PrimaryGroup": {
         "Category": "Firearm",
@@ -383,74 +363,17 @@
         "RequiredQuest": "",
         "ItemsToSpawn": 1,
         "MinAmmoCapacity": 15,
-        "MaxAmmoCapacity": 20,
+        "MaxAmmoCapacity": 15,
         "NumMagsSpawned": 3,
         "NumClipsSpawned": 3,
         "NumRoundsSpawned": 6,
         "SpawnMagAndClip": false,
-        "BespokeAttachmentChance": 0.5,
+        "BespokeAttachmentChance": 0.0,
         "IsCompatibleMagazine": false,
         "AutoPopulateGroup": true,
         "ForceSpawnAllSubPools": false,
-        "IDOverride": [],
-        "Eras": [],
-        "Sets": [
-          "Real"
-        ],
-        "Sizes": [
-          "Pocket",
-          "Pistol"
-        ],
-        "Actions": [
-          "Automatic"
-        ],
-        "Modes": [],
-        "ExcludedModes": [
-          "FullAuto"
-        ],
-        "FeedOptions": [],
-        "MountsAvailable": [],
-        "RoundPowers": [
-          "Pistol"
-        ],
-        "Features": [],
-        "MeleeStyles": [],
-        "MeleeHandedness": [],
-        "MountTypes": [],
-        "PowerupTypes": [],
-        "ThrownTypes": [],
-        "ThrownDamageTypes": [],
-        "SubGroups": []
-      },
-      "BackupGroup": null
-    },
-    {
-      "Type": "Firearm",
-      "IconName": "ExampleSupplyPointIcon.png",
-      "TokenCost": 2,
-      "TokenCostLimited": 2,
-      "MinLevelAppears": 0,
-      "MaxLevelAppears": 1,
-      "SpawnsInSmallCase": false,
-      "SpawnsInLargeCase": false,
-      "PrimaryGroup": {
-        "Category": "Firearm",
-        "Rarity": 1.0,
-        "RequiredQuest": "",
-        "ItemsToSpawn": 1,
-        "MinAmmoCapacity": 0,
-        "MaxAmmoCapacity": 7,
-        "NumMagsSpawned": 3,
-        "NumClipsSpawned": 3,
-        "NumRoundsSpawned": 6,
-        "SpawnMagAndClip": false,
-        "BespokeAttachmentChance": 0.5,
-        "IsCompatibleMagazine": false,
-        "AutoPopulateGroup": false,
-        "ForceSpawnAllSubPools": false,
         "IDOverride": [
-          "M1911Tactical",
-          "vault_M1911Modern"
+          "ClericM9"
         ],
         "Eras": [],
         "Sets": [],
@@ -461,64 +384,6 @@
         "FeedOptions": [],
         "MountsAvailable": [],
         "RoundPowers": [],
-        "Features": [],
-        "MeleeStyles": [],
-        "MeleeHandedness": [],
-        "MountTypes": [],
-        "PowerupTypes": [],
-        "ThrownTypes": [],
-        "ThrownDamageTypes": [],
-        "SubGroups": []
-      },
-      "BackupGroup": null
-    },
-    {
-      "Type": "Firearm",
-      "IconName": "ExampleSupplyPointIcon.png",
-      "TokenCost": 2,
-      "TokenCostLimited": 2,
-      "MinLevelAppears": 0,
-      "MaxLevelAppears": 1,
-      "SpawnsInSmallCase": false,
-      "SpawnsInLargeCase": false,
-      "PrimaryGroup": {
-        "Category": "Firearm",
-        "Rarity": 1.0,
-        "RequiredQuest": "",
-        "ItemsToSpawn": 1,
-        "MinAmmoCapacity": 0,
-        "MaxAmmoCapacity": 7,
-        "NumMagsSpawned": 3,
-        "NumClipsSpawned": 3,
-        "NumRoundsSpawned": 6,
-        "SpawnMagAndClip": false,
-        "BespokeAttachmentChance": 0.5,
-        "IsCompatibleMagazine": false,
-        "AutoPopulateGroup": true,
-        "ForceSpawnAllSubPools": false,
-        "IDOverride": [
-          "vault_M1911Modern"
-        ],
-        "Eras": [],
-        "Sets": [
-          "Real"
-        ],
-        "Sizes": [
-          "Pocket",
-          "Pistol"
-        ],
-        "Actions": [
-          "Automatic"
-        ],
-        "Modes": [],
-        "ExcludedModes": [
-          "FullAuto"
-        ],
-        "FeedOptions": [],
-        "MountsAvailable": [],
-        "RoundPowers": [
-          "Pistol"
-        ],
         "Features": [],
         "MeleeStyles": [],
         "MeleeHandedness": [],
@@ -534,30 +399,28 @@
       "Type": "Firearm",
       "IconName": "TNH_Icon_assault_rifle",
       "TokenCost": 5,
-      "TokenCostLimited": 5,
-      "MinLevelAppears": 2,
-      "MaxLevelAppears": 3,
+      "TokenCostLimited": 4,
+      "MinLevelAppears": 1,
+      "MaxLevelAppears": 99,
       "SpawnsInSmallCase": false,
-      "SpawnsInLargeCase": false,
+      "SpawnsInLargeCase": true,
       "PrimaryGroup": {
         "Category": "Firearm",
-        "Rarity": 4.0,
+        "Rarity": 1.0,
         "RequiredQuest": "",
         "ItemsToSpawn": 1,
-        "MinAmmoCapacity": 20,
-        "MaxAmmoCapacity": 30,
+        "MinAmmoCapacity": 0,
+        "MaxAmmoCapacity": 40,
         "NumMagsSpawned": 3,
         "NumClipsSpawned": 3,
         "NumRoundsSpawned": 6,
         "SpawnMagAndClip": false,
-        "BespokeAttachmentChance": 0.0,
+        "BespokeAttachmentChance": 0.5,
         "IsCompatibleMagazine": false,
         "AutoPopulateGroup": false,
         "ForceSpawnAllSubPools": false,
         "IDOverride": [
-          "Bren806",
-          "H416",
-          "M16A4"
+          "G36"
         ],
         "Eras": [],
         "Sets": [],
@@ -575,184 +438,36 @@
         "PowerupTypes": [],
         "ThrownTypes": [],
         "ThrownDamageTypes": [],
-        "SubGroups": [
-          {
-            "Category": "Firearm",
-            "Rarity": 4.0,
-            "RequiredQuest": "",
-            "ItemsToSpawn": 1,
-            "MinAmmoCapacity": 20,
-            "MaxAmmoCapacity": 30,
-            "NumMagsSpawned": 3,
-            "NumClipsSpawned": 3,
-            "NumRoundsSpawned": 6,
-            "SpawnMagAndClip": false,
-            "BespokeAttachmentChance": 0.0,
-            "IsCompatibleMagazine": false,
-            "AutoPopulateGroup": false,
-            "ForceSpawnAllSubPools": false,
-            "IDOverride": [
-              "M4A1v2Rightie",
-              "M4A1v2Leftie"
-            ],
-            "Eras": [],
-            "Sets": [],
-            "Sizes": [],
-            "Actions": [],
-            "Modes": [],
-            "ExcludedModes": [],
-            "FeedOptions": [],
-            "MountsAvailable": [],
-            "RoundPowers": [],
-            "Features": [],
-            "MeleeStyles": [],
-            "MeleeHandedness": [],
-            "MountTypes": [],
-            "PowerupTypes": [],
-            "ThrownTypes": [],
-            "ThrownDamageTypes": [],
-            "SubGroups": []
-          },
-          {
-            "Category": "Firearm",
-            "Rarity": 4.0,
-            "RequiredQuest": "",
-            "ItemsToSpawn": 1,
-            "MinAmmoCapacity": 30,
-            "MaxAmmoCapacity": 60,
-            "NumMagsSpawned": 3,
-            "NumClipsSpawned": 3,
-            "NumRoundsSpawned": 6,
-            "SpawnMagAndClip": false,
-            "BespokeAttachmentChance": 0.0,
-            "IsCompatibleMagazine": false,
-            "AutoPopulateGroup": false,
-            "ForceSpawnAllSubPools": false,
-            "IDOverride": [
-              "Bubba15"
-            ],
-            "Eras": [],
-            "Sets": [],
-            "Sizes": [],
-            "Actions": [],
-            "Modes": [],
-            "ExcludedModes": [],
-            "FeedOptions": [],
-            "MountsAvailable": [],
-            "RoundPowers": [],
-            "Features": [],
-            "MeleeStyles": [],
-            "MeleeHandedness": [],
-            "MountTypes": [],
-            "PowerupTypes": [],
-            "ThrownTypes": [],
-            "ThrownDamageTypes": [],
-            "SubGroups": []
-          },
-          {
-            "Category": "Firearm",
-            "Rarity": 4.0,
-            "RequiredQuest": "",
-            "ItemsToSpawn": 1,
-            "MinAmmoCapacity": 60,
-            "MaxAmmoCapacity": 60,
-            "NumMagsSpawned": 0,
-            "NumClipsSpawned": 0,
-            "NumRoundsSpawned": 0,
-            "SpawnMagAndClip": false,
-            "BespokeAttachmentChance": 0.0,
-            "IsCompatibleMagazine": false,
-            "AutoPopulateGroup": false,
-            "ForceSpawnAllSubPools": true,
-            "IDOverride": [
-              "SportACR"
-            ],
-            "Eras": [],
-            "Sets": [],
-            "Sizes": [],
-            "Actions": [],
-            "Modes": [],
-            "ExcludedModes": [],
-            "FeedOptions": [],
-            "MountsAvailable": [],
-            "RoundPowers": [],
-            "Features": [],
-            "MeleeStyles": [],
-            "MeleeHandedness": [],
-            "MountTypes": [],
-            "PowerupTypes": [],
-            "ThrownTypes": [],
-            "ThrownDamageTypes": [],
-            "SubGroups": [
-              {
-                "Category": "Uncategorized",
-                "Rarity": 4.0,
-                "RequiredQuest": "",
-                "ItemsToSpawn": 3,
-                "MinAmmoCapacity": 0,
-                "MaxAmmoCapacity": 0,
-                "NumMagsSpawned": 0,
-                "NumClipsSpawned": 0,
-                "NumRoundsSpawned": 0,
-                "SpawnMagAndClip": false,
-                "BespokeAttachmentChance": 0.0,
-                "IsCompatibleMagazine": false,
-                "AutoPopulateGroup": false,
-                "ForceSpawnAllSubPools": false,
-                "IDOverride": [
-                  "MagazineH416D60"
-                ],
-                "Eras": [],
-                "Sets": [],
-                "Sizes": [],
-                "Actions": [],
-                "Modes": [],
-                "ExcludedModes": [],
-                "FeedOptions": [],
-                "MountsAvailable": [],
-                "RoundPowers": [],
-                "Features": [],
-                "MeleeStyles": [],
-                "MeleeHandedness": [],
-                "MountTypes": [],
-                "PowerupTypes": [],
-                "ThrownTypes": [],
-                "ThrownDamageTypes": [],
-                "SubGroups": []
-              }
-            ]
-          }
-        ]
+        "SubGroups": []
       },
       "BackupGroup": null
     },
     {
       "Type": "Firearm",
-      "IconName": "TNH_Icon_smg",
-      "TokenCost": 6,
-      "TokenCostLimited": 6,
-      "MinLevelAppears": 3,
+      "IconName": "TNH_Icon_carbine",
+      "TokenCost": 5,
+      "TokenCostLimited": 4,
+      "MinLevelAppears": 2,
       "MaxLevelAppears": 99,
       "SpawnsInSmallCase": false,
-      "SpawnsInLargeCase": false,
+      "SpawnsInLargeCase": true,
       "PrimaryGroup": {
         "Category": "Firearm",
-        "Rarity": 16.0,
+        "Rarity": 1.0,
         "RequiredQuest": "",
         "ItemsToSpawn": 1,
-        "MinAmmoCapacity": 30,
-        "MaxAmmoCapacity": 30,
+        "MinAmmoCapacity": 0,
+        "MaxAmmoCapacity": 40,
         "NumMagsSpawned": 3,
         "NumClipsSpawned": 3,
         "NumRoundsSpawned": 6,
         "SpawnMagAndClip": false,
-        "BespokeAttachmentChance": 0.5,
+        "BespokeAttachmentChance": 1.0,
         "IsCompatibleMagazine": false,
-        "AutoPopulateGroup": false,
+        "AutoPopulateGroup": true,
         "ForceSpawnAllSubPools": false,
         "IDOverride": [
-          "ModulMPX_1",
-          "ModulMPX_2"
+          "G36C"
         ],
         "Eras": [],
         "Sets": [],
@@ -772,24 +487,34 @@
         "ThrownDamageTypes": [],
         "SubGroups": []
       },
-      "BackupGroup": {
+      "BackupGroup": null
+    },
+    {
+      "Type": "Storage",
+      "IconName": "TNH_Icon_medieval",
+      "TokenCost": 4,
+      "TokenCostLimited": 4,
+      "MinLevelAppears": 4,
+      "MaxLevelAppears": 99,
+      "SpawnsInSmallCase": false,
+      "SpawnsInLargeCase": true,
+      "PrimaryGroup": {
         "Category": "Firearm",
-        "Rarity": 16.0,
+        "Rarity": 4.0,
         "RequiredQuest": "",
         "ItemsToSpawn": 1,
-        "MinAmmoCapacity": 30,
-        "MaxAmmoCapacity": 30,
-        "NumMagsSpawned": 3,
-        "NumClipsSpawned": 3,
-        "NumRoundsSpawned": 6,
+        "MinAmmoCapacity": 0,
+        "MaxAmmoCapacity": 0,
+        "NumMagsSpawned": 0,
+        "NumClipsSpawned": 0,
+        "NumRoundsSpawned": 0,
         "SpawnMagAndClip": false,
-        "BespokeAttachmentChance": 0.5,
+        "BespokeAttachmentChance": 0.0,
         "IsCompatibleMagazine": false,
         "AutoPopulateGroup": false,
         "ForceSpawnAllSubPools": false,
         "IDOverride": [
-          "UMP9",
-          "Evo3"
+          "Katana"
         ],
         "Eras": [],
         "Sets": [],
@@ -808,37 +533,38 @@
         "ThrownTypes": [],
         "ThrownDamageTypes": [],
         "SubGroups": []
-      }
+      },
+      "BackupGroup": null
     },
     {
-      "Type": "Equipment",
-      "IconName": "TNH_Icon_reflex_sights",
-      "TokenCost": 2,
-      "TokenCostLimited": 2,
-      "MinLevelAppears": 0,
+      "Type": "Consumable",
+      "IconName": "TNH_Icon_weiner_shield",
+      "TokenCost": 1,
+      "TokenCostLimited": 1,
+      "MinLevelAppears": 2,
       "MaxLevelAppears": 99,
       "SpawnsInSmallCase": false,
       "SpawnsInLargeCase": false,
       "PrimaryGroup": {
-        "Category": "Attachment",
-        "Rarity": 10.0,
+        "Category": "Powerup",
+        "Rarity": 1.0,
         "RequiredQuest": "",
         "ItemsToSpawn": 1,
-        "MinAmmoCapacity": -1,
-        "MaxAmmoCapacity": -1,
-        "NumMagsSpawned": -1,
-        "NumClipsSpawned": -1,
-        "NumRoundsSpawned": -1,
+        "MinAmmoCapacity": 30,
+        "MaxAmmoCapacity": 30,
+        "NumMagsSpawned": 3,
+        "NumClipsSpawned": 3,
+        "NumRoundsSpawned": 6,
         "SpawnMagAndClip": false,
-        "BespokeAttachmentChance": 0.0,
+        "BespokeAttachmentChance": 0.5,
         "IsCompatibleMagazine": false,
-        "AutoPopulateGroup": true,
+        "AutoPopulateGroup": false,
         "ForceSpawnAllSubPools": false,
-        "IDOverride": [],
-        "Eras": [],
-        "Sets": [
-          "Real"
+        "IDOverride": [
+          "PowerUpMeat_Invincibility"
         ],
+        "Eras": [],
+        "Sets": [],
         "Sizes": [],
         "Actions": [],
         "Modes": [],
@@ -846,14 +572,57 @@
         "FeedOptions": [],
         "MountsAvailable": [],
         "RoundPowers": [],
-        "Features": [
-          "Reflex"
-        ],
+        "Features": [],
         "MeleeStyles": [],
         "MeleeHandedness": [],
-        "MountTypes": [
-          "Picatinny"
+        "MountTypes": [],
+        "PowerupTypes": [],
+        "ThrownTypes": [],
+        "ThrownDamageTypes": [],
+        "SubGroups": []
+      },
+      "BackupGroup": {}
+    },
+    {
+      "Type": "Consumable",
+      "IconName": "TNH_Icon_weiner_ammo",
+      "TokenCost": 0,
+      "TokenCostLimited": 1,
+      "MinLevelAppears": 0,
+      "MaxLevelAppears": 99,
+      "SpawnsInSmallCase": false,
+      "SpawnsInLargeCase": false,
+      "PrimaryGroup": {
+        "Category": "Powerup",
+        "Rarity": 1.0,
+        "RequiredQuest": "",
+        "ItemsToSpawn": 1,
+        "MinAmmoCapacity": 0,
+        "MaxAmmoCapacity": 0,
+        "NumMagsSpawned": 0,
+        "NumClipsSpawned": 0,
+        "NumRoundsSpawned": 0,
+        "SpawnMagAndClip": false,
+        "BespokeAttachmentChance": 0.0,
+        "IsCompatibleMagazine": false,
+        "AutoPopulateGroup": false,
+        "ForceSpawnAllSubPools": false,
+        "IDOverride": [
+          "PowerUpMeat_InfiniteAmmo"
         ],
+        "Eras": [],
+        "Sets": [],
+        "Sizes": [],
+        "Actions": [],
+        "Modes": [],
+        "ExcludedModes": [],
+        "FeedOptions": [],
+        "MountsAvailable": [],
+        "RoundPowers": [],
+        "Features": [],
+        "MeleeStyles": [],
+        "MeleeHandedness": [],
+        "MountTypes": [],
         "PowerupTypes": [],
         "ThrownTypes": [],
         "ThrownDamageTypes": [],
@@ -864,15 +633,15 @@
     {
       "Type": "Consumable",
       "IconName": "TNH_Icon_weiner_health",
-      "TokenCost": 5,
-      "TokenCostLimited": 5,
+      "TokenCost": 3,
+      "TokenCostLimited": 3,
       "MinLevelAppears": 0,
       "MaxLevelAppears": 99,
       "SpawnsInSmallCase": false,
       "SpawnsInLargeCase": false,
       "PrimaryGroup": {
         "Category": "Powerup",
-        "Rarity": 10.0,
+        "Rarity": 1.0,
         "RequiredQuest": "",
         "ItemsToSpawn": 1,
         "MinAmmoCapacity": 0,
@@ -908,121 +677,26 @@
         "SubGroups": []
       },
       "BackupGroup": null
-    },
-    {
-      "Type": "Locomotion",
-      "IconName": "TNH_Icon_grappel",
-      "TokenCost": 1,
-      "TokenCostLimited": 1,
-      "MinLevelAppears": 0,
-      "MaxLevelAppears": 99,
-      "SpawnsInSmallCase": false,
-      "SpawnsInLargeCase": false,
-      "PrimaryGroup": {
-        "Category": "Uncategorized",
-        "Rarity": 10.0,
-        "RequiredQuest": null,
-        "ItemsToSpawn": 1,
-        "MinAmmoCapacity": -1,
-        "MaxAmmoCapacity": -1,
-        "NumMagsSpawned": 3,
-        "NumClipsSpawned": 3,
-        "NumRoundsSpawned": 8,
-        "SpawnMagAndClip": false,
-        "BespokeAttachmentChance": 0.5,
-        "IsCompatibleMagazine": false,
-        "AutoPopulateGroup": false,
-        "ForceSpawnAllSubPools": false,
-        "IDOverride": [
-          "Grapple"
-        ],
-        "Eras": [],
-        "Sets": [],
-        "Sizes": [],
-        "Actions": [],
-        "Modes": [],
-        "ExcludedModes": [],
-        "FeedOptions": [],
-        "MountsAvailable": [],
-        "RoundPowers": [],
-        "Features": [],
-        "MeleeStyles": [],
-        "MeleeHandedness": [],
-        "MountTypes": [],
-        "PowerupTypes": [],
-        "ThrownTypes": [],
-        "ThrownDamageTypes": [],
-        "SubGroups": null
-      },
-      "BackupGroup": null
-    },
-    {
-      "Type": "Storage",
-      "IconName": "TNH_Icon_backpack",
-      "TokenCost": 2,
-      "TokenCostLimited": 3,
-      "MinLevelAppears": 0,
-      "MaxLevelAppears": 99,
-      "SpawnsInSmallCase": false,
-      "SpawnsInLargeCase": false,
-      "PrimaryGroup": {
-        "Category": "Uncategorized",
-        "Rarity": 10.0,
-        "RequiredQuest": null,
-        "ItemsToSpawn": 1,
-        "MinAmmoCapacity": -1,
-        "MaxAmmoCapacity": -1,
-        "NumMagsSpawned": 3,
-        "NumClipsSpawned": 3,
-        "NumRoundsSpawned": 8,
-        "SpawnMagAndClip": false,
-        "BespokeAttachmentChance": 0.5,
-        "IsCompatibleMagazine": false,
-        "AutoPopulateGroup": false,
-        "ForceSpawnAllSubPools": false,
-        "IDOverride": [
-          "BackpackA"
-        ],
-        "Eras": [],
-        "Sets": [],
-        "Sizes": [],
-        "Actions": [],
-        "Modes": [],
-        "ExcludedModes": [],
-        "FeedOptions": [],
-        "MountsAvailable": [],
-        "RoundPowers": [],
-        "Features": [],
-        "MeleeStyles": [],
-        "MeleeHandedness": [],
-        "MountTypes": [],
-        "PowerupTypes": [],
-        "ThrownTypes": [],
-        "ThrownDamageTypes": [],
-        "SubGroups": null
-      },
-      "BackupGroup": null
     }
   ],
   "Levels": [
     {
-      "NumOverrideTokensForHold": 3,
+      "NumOverrideTokensForHold": 4,
       "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
+      "MaxSupplyPoints": 3,
       "MinConstructors": 1,
       "MaxConstructors": 1,
-      "MinPanels": 1,
-      "MaxPanels": 1,
-      "MinBoxesSpawned": 2,
+      "MinPanels": 2,
+      "MaxPanels": 2,
+      "MinBoxesSpawned": 3,
       "MaxBoxesSpawned": 4,
-      "MinTokensPerSupply": 1,
-      "MaxTokensPerSupply": 1,
+      "MinTokensPerSupply": 0,
+      "MaxTokensPerSupply": 0,
       "BoxTokenChance": 0.0,
       "BoxHealthChance": 0.5,
       "PossiblePanelTypes": [
         "AmmoReloader",
-        "MagDuplicator",
-        "Recycler"
+        "MagDuplicator"
       ],
       "TakeChallenge": {
         "TurretType": "SMG",
